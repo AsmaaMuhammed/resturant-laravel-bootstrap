@@ -1,0 +1,18 @@
+//
+1-comments count=>blog page//done 
+2-comments count=>comment page must be according to type (dish or news)//done
+3-share count=>comment page must be according to type (dish or news)//done
+4-display comments=>comment page must be according to type (dish or news or events or posts)//done
+5-display replies=>comment page must be according to type (dish or news or events or posts)//done
+6-php unit test 
+7-apis
+8-create the project using laravel and vuejs
+9-create the project using nodejs and mongoDB
+
+
+//notes
+we can make comments:
+1-dishes
+2-news
+3-events
+4-post

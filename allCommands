@@ -1,0 +1,49 @@
+//instraunts
+--php artisan make:auth
+-----------------------------------multiple auth
+--php artisan make:middleware Admin
+--change handle function in app/Http/Middleware/Admin.php
+
+--php artisan make:migration create_follow_us_table --create=follow_us
+--php artisan make:model /Models/FollowUs
+
+1-php artisan crud:generate Dishes --fields='title#string; desc#text; category#select#options={"1": "Breakfast", "2": "Lunch", "3": "Dinner", "4": "Dessert"}' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+
+2-php artisan crud:generate Clients --fields='name#string; email#string; phone#string; photo#string;' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+
+3-php artisan crud:generate Comments --fields='user_id#integer; comment#text;' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+
+4-php artisan crud:generate Replies --fields='comments_id#integer; replay#text;' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+
+5-php artisan crud:generate GeneralDesc --fields='category#select#options={"1": "About", "2": "Menue", "3": "Events", "4": "Services", "5": "Blog", "6": "News"}; desc#text' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+
+6-php artisan crud:generate News --fields='title#string; desc#text; photo#string; no_share#integer' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+
+7-php artisan crud:generate Events --fields='title#string; desc#text; photo#string' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+
+8-php artisan crud:generate Services --fields='title#string; desc#text; photo#string' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+
+9-php artisan crud:generate About --fields='photo#string; desc#text' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+
+10-php artisan crud:generate Contacts --fields='social_type#string; value#string' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+
+11-php artisan crud:generate Posts --fields='title#string; desc#text; photo#string' --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
